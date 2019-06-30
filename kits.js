@@ -12,10 +12,9 @@ function randomInt(n,m) {
 // 参数： 是一个函数，这个函数有两个形参，第一个形参代表了数组里面的每个元素，第二个形参代表了每个索引
 // 返回值 ：返回值是undefined
 // 例如：
-// var arr = [1,2,3,4,5];
-// var sum = 0;
-// var res = arr.forEach(function(e,i){
-//   sum += e;
-// };
+var arr = [1,2,3,4,5];
+var sum = 0;
+var res = arr.forEach(function(e,i){
+  sum += e;
+});
 
-///////
