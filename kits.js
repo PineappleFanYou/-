@@ -30,3 +30,18 @@ var arr = [3000,5000,100,80,99,2500];
 var arr2 = arr.filter(function(e,i){
 	return e > 2000;
 })
+
+
+   // 求最大值 并封装函数
+
+function max(n,m,a) {
+        var max = arr[0];
+        for (var i = 0; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i]
+            }
+        }
+        return max;
+    };
+    arr = [1, 9, 3, 7, 5]
+    console.log(max(arr)) */
