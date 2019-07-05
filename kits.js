@@ -64,3 +64,27 @@ function times() {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
 }
+
+
+
+//封装  求1-100 能被 2 整除的 所有数
+
+function fn() {
+    let arr = [];
+    for (let i = 0; i <= 100; i++) {
+        if (i % 2 == 0) {
+            arr.push(i);
+        }
+    }
+    console.log(arr);
+}
+
+//封装 n到m之间所有能被k整除的数字添加到新数组arr中
+function fn () {
+    let ar = [];
+    for(let i = n; i <= m; i++) {
+        if(n % k === 0) {
+            arr.push(i);
+        }
+    }
+}
