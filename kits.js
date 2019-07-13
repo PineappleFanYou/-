@@ -58,6 +58,11 @@ console.log(max(arr))
 
 
 // 封装时间
+/** 
+ * @description  封装实时 时间
+ * @param 没有参数
+ * @return {time}  返回值是一个 格式为： xxxx-xx-xx xx:xx:xx 年月日时分秒
+ */
 function times() {
     let date = new Date();
     let year = date.getFullYear();
@@ -73,7 +78,8 @@ function times() {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
 }
-
+// 直接调用
+// let time = times()
 
 
 //封装  求1-100 能被 2 整除的 所有数
