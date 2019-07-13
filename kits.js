@@ -146,3 +146,19 @@ function loadData(key) {
 }
 //直接调用
 //let arr = loadData('shopCartData')  里面是存储时声明的变量
+
+
+
+/**
+ * @description 用于将数组存储到localStorage里面的方法
+ * @param {string} key 存储使用的键
+ * @param {Array} arr 要存储的数组数据
+ * @return {undefined}
+  */
+
+  function saveData(key,arr) {
+      //先把数组转换成字符串
+      let json = JSON.stringify(arr);
+      //再存储到localStorage
+      localStorage.setItem(key, json);
+  }
