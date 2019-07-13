@@ -36,8 +36,13 @@ var arr2 = arr.filter(function (e, i) {
 })
 
 
-// 求最大值 并封装函数
 
+// 求最大值 并封装函数
+/**
+ * @description  求 n-m  的最大值，假设数组里面第一项是最大值，循环n-m比较出最大值
+ * @param  n m 随机数
+ * @return 返回一个最大值
+ */
 function max(n, m, a) {
     var max = arr[0];
     for (var i = 0; i < arr.length; i++) {
