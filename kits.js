@@ -98,7 +98,7 @@ function fn() {
 /**
  * @description  n到m之间所有能被k整除的数字添加到新数组arr中
  * @param n m k n-m的区间随机数   k 是被 % 的数
- * 
+ * @return 能被整除的n-m之间的所有数
  */
 function fn (n,m,k) {
     let arr = [];
@@ -114,7 +114,9 @@ function fn (n,m,k) {
 
 
 /**
- * 封装的是一个可以生成唯一id的方法
+ * @description 封装的是一个可以生成唯一id的方法
+ * @param {} 没有参数
+ * @return {} 随机生成一个6位数的随机id
  */
 kits.primaryKey = function () {
     // 我们通过时间戳 + 大范围的随机数来生成id
