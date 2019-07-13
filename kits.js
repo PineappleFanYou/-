@@ -2,10 +2,10 @@
 
 
 /**  
-* @descripttion 函数的描述  封装一个可以获得随机区间的整数的函数 
-* @param {string} n m  参数说明   一个值到另一个值的数
-* @return {} 返回值 一个随机的区间整数 
-*/
+ * @descripttion 函数的描述  封装一个可以获得随机区间的整数的函数 
+ * @param {string} n m  参数说明   一个值到另一个值的数
+ * @return {} 返回值 一个随机的区间整数 
+ */
 function randomInt(n, m) {
     return Math.floor(Math.random() * (m - n + 1) + n);
 };
@@ -100,10 +100,10 @@ function fn() {
  * @param n m k n-m的区间随机数   k 是被 % 的数
  * @return 能被整除的n-m之间的所有数
  */
-function fn (n,m,k) {
+function fn(n, m, k) {
     let arr = [];
-    for(let i = n; i <= m; i++) {
-        if(n % k === 0) {
+    for (let i = n; i <= m; i++) {
+        if (n % k === 0) {
             arr.push(i);
         }
     }
@@ -127,3 +127,22 @@ kits.primaryKey = function () {
     // 把两个得到的结果，拼接起来
     return now + '' + r;
 }
+
+
+
+/**
+ * @description 读取存储在localStorage 里面的数组
+ * @param {string} key 存储数据使用的键
+ * @return {Array} 返回值 返回一个数组， 如果不存在，返回空数组
+ */
+function loadData(key) {
+    let str = loaclStorage.getItem(key);
+    let arr = JSON.parse(str);
+    //判断，如果没有，就给一个空数组，如果有，就返回一个数组
+    if (!arr) {
+        arr = [];
+    }
+    return arr;
+}
+//直接调用
+//let arr = loadData('shopCartData')  里面是存储时声明的变量
