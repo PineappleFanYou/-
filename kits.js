@@ -95,15 +95,22 @@ function fn() {
 }
 
 //封装 n到m之间所有能被k整除的数字添加到新数组arr中
-function fn () {
-    let ar = [];
+/**
+ * @description  n到m之间所有能被k整除的数字添加到新数组arr中
+ * @param n m k n-m的区间随机数   k 是被 % 的数
+ * 
+ */
+function fn (n,m,k) {
+    let arr = [];
     for(let i = n; i <= m; i++) {
         if(n % k === 0) {
             arr.push(i);
         }
     }
+    return arr;
 }
-
+//直接调用
+// let arr = fn(1,100,2)
 
 
 /**
