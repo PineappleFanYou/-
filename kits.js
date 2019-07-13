@@ -1,7 +1,11 @@
-// 工具类公用函数封装
+// 工具类公用函数封装  用于把很多重复使用的代码，进行封装，到时候直接使用
 
 
-// 封装一个可以获得随机区间的整数的函数
+/**  
+* @descripttion 函数的描述  封装一个可以获得随机区间的整数的函数 
+* @param {string} n m  参数说明   一个值到另一个值的数
+* @return {} 返回值 一个随机的区间整数 
+*/
 function randomInt(n, m) {
     return Math.floor(Math.random() * (m - n + 1) + n);
 };
